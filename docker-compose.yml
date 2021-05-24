@@ -1,0 +1,7 @@
+version: '3.7'
+services:
+  latex:
+    image: danteev/texlive
+    command: bash -c "cd /home; lualatex -pdf Cuong-Nguyen-Duc-CV.tex"
+    volumes:
+      - .:/home
